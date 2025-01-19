@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI Roadmap</title>
+    <style>
+                /* General Reset */
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0d1117, #161b22);
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 2.5rem;
+            background: #1f2937;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            border-bottom: 4px solid #2563eb;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #60a5fa;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem;
+            gap: 3rem;
+        }
+
+        .step {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+            width: 90%;
+            max-width: 850px;
+            padding: 2.5rem;
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+        }
+
+        .step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+        }
+
+        .step h2 {
+            font-size: 2.7rem;
+            color: #dbeafe;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        .step p, .step ul {
+            font-size: 1.3rem;
+            line-height: 2;
+            margin: 1rem 0;
+            color: #f3f4f6;
+        }
+
+        .step ul {
+            padding-left: 2rem;
+        }
+
+        .step ul li {
+            margin-bottom: 1rem;
+            position: relative;
+            color: #e5e7eb;
+        }
+
+        .step ul li:before {
+            content: '\2022';
+            color: #60a5fa;
+            font-weight: bold;
+            display: inline-block;
+            width: 1rem;
+            margin-left: -1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1f2937;
+            color: #9ca3af;
+            margin-top: 4rem;
+            font-size: 1.2rem;
+            border-top: 3px solid #2563eb;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            margin-top: 1rem;
+            background: #2563eb;
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.4s ease-in-out, transform 0.4s ease-in-out;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-button:hover {
+            background: #1e40af;
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .step h2 {
+                font-size: 2.2rem;
+            }
+
+            .step p, .step ul {
+                font-size: 1.1rem;
+            }
+
+            .roadmap-container {
+                gap: 2rem;
+            }
+
+            .step {
+                padding: 2rem;
+                width: 95%;
+            }
+
+            .cta-button {
+                font-size: 1.3rem;
+                padding: 1rem 2rem;
+            }
+
+            footer {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Generative AI Roadmap</h1>
+</header>
+
+<div class="roadmap-container">
+    <!-- Step 1 -->
+    <div class="step">
+        <h2>Step 1: Basic LLM Concepts</h2>
+        <p><strong>Core Knowledge:</strong></p>
+        <ul>
+            <li>Understand the Transformer architecture: Encoders process input data, and decoders generate responses.</li>
+            <li>Learn about tokenization, temperature, penalty, and max tokens.</li>
+            <li>Experiment with self-attention mechanisms and positional encodings.</li>
+        </ul>
+        <p><strong>Learning Activities:</strong></p>
+        <ul>
+            <li>Explore tools like OpenAI Playground to tweak parameters and see their effects.</li>
+            <li>Study encoder-only (e.g., BERT), decoder-only (e.g., GPT), and encoder-decoder (e.g., T5) models.</li>
+        </ul>
+        <p><strong>Purpose:</strong> Build a foundational understanding of how LLMs process and generate text.</p>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step">
+        <h2>Step 2: Prompt Engineering</h2>
+        <p><strong>Core Knowledge:</strong></p>
+        <ul>
+            <li>Learn single-shot, few-shot, and advanced prompting techniques.</li>
+            <li>Understand behind-the-scenes prompting (e.g., system-level instructions for models).</li>
+            <li>Explore ethical and safety considerations in prompt design.</li>
+        </ul>
+        <p><strong>Applications:</strong> Build chatbots, summarizers, translators, and other applications using optimized prompts.</p>
+        <p><strong>Learning Activities:</strong></p>
+        <ul>
+            <li>Experiment with custom GPT configurations and advanced prompt strategies.</li>
+            <li>Understand the differences between effective user-level prompts and engineering prompts.</li>
+        </ul>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step">
+        <h2>Step 3: Python Programming</h2>
+        <p><strong>Core Knowledge:</strong></p>
+        <ul>
+            <li>Learn libraries essential for AI: NumPy, Pandas, Matplotlib, PyTorch, and TensorFlow.</li>
+            <li>Basics of file handling, loops, and functions.</li>
+        </ul>
+        <p><strong>Learning Activities:</strong></p>
+        <ul>
+            <li>Practice datasets and tasks on platforms like Kaggle.</li>
+            <li>Focus on Python for AI, not general programming.</li>
+        </ul>
+        <p><strong>Purpose:</strong> Python is the backbone for developing and deploying AI workflows.</p>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step">
+        <h2>Step 4: LLM Access</h2>
+        <p><strong>Core Knowledge:</strong></p>
+        <ul>
+            <li>Understand how to access LLMs via APIs (e.g., OpenAI, Anthropic) or locally hosted models.</li>
+            <li>Explore Hugging Face for open-source LLMs and their APIs.</li>
+        </ul>
+        <p><strong>Applications:</strong> Experiment with commercial (e.g., OpenAI) and open-source (e.g., Hugging Face) tools to interact with LLMs.</p>
+        <p><strong>Learning Activities:</strong></p>
+        <ul>
+            <li>Use APIs to test pre-built models before hosting locally.</li>
+            <li>Explore cloud platforms for model hosting.</li>
+        </ul>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="step">
+        <h2>Step 5: Retrieval-Augmented Generation (RAG)</h2>
+        <p><strong>Core Knowledge:</strong></p>
+        <ul>
+            <li>Understand RAG as combining LLMs with external knowledge bases for dynamic, real-time information retrieval.</li>
+            <li>Learn embedding-based search techniques.</li>
+        </ul>
+        <p><strong>Frameworks:</strong> LangChain for building RAG pipelines and LlamaIndex for document indexing.</p>
+        <p><strong>Applications:</strong> Build applications like knowledge-based Q&A tools or chatbots.</p>
+        <p><strong>Learning Activities:</strong></p>
+        <ul>
+            <li>Implement RAG using LangChain and LlamaIndex.</li>
+            <li>Study basic RAG before diving into Advanced RAG.</li>
+        </ul>
+    </div>
+
+    <!-- Step 6 -->
+    <div class="step">
+        <h2>Step 6: Building and Deploying Applications</h2>
+        <p><strong>Core Knowledge:</strong></p>
+        <ul>
+            <li>Learn to create front-end UIs with Streamlit or Flask.</li>
+            <li>Deploy applications using Docker or cloud platforms (AWS, Google Cloud).</li>
+            <li>Monitor app performance with tools like Prometheus.</li>
+        </ul>
+        <p><strong>Applications:</strong> Develop prototypes for chatbots or other LLM-based apps.</p>
+        <p><strong>Learning Activities:</strong></p>
+        <ul>
+            <li>Build and deploy a basic chatbot with Streamlit and LangChain.</li>
+            <li>Experiment with containerization using Docker.</li>
+        </ul>
+    </div>
+
+    <!-- Step 7 -->
+    <div class="step">
+        <h2>Step 7: Fine-Tuning LLMs</h2>
+        <p><strong>Core Knowledge:</strong></p>
+        <ul>
+            <li>Fine-tune LLMs to specialize them for domain-specific tasks.</li>
+            <li>Use Parameter-Efficient Fine-Tuning (PEFT) techniques like LoRA and QLoRA to optimize resource use.</li>
+        </ul>
+        <p><strong>Applications:</strong> Create custom-trained models for healthcare, law, education, etc.</p>
+        <p><strong>Learning Activities:</strong></p>
+        <ul>
+            <li>Use Hugging Face’s Trainer API or PyTorch for fine-tuning small models.</li>
+        </ul>
+        <p><strong>Purpose:</strong> Personalize LLMs for specific use cases.</p>
+    </div>
+
+    <!-- Step 8 -->
+    <div class="step">
+        <h2>Step 8: Initial Training</h2>
+        <p><strong>Core Knowledge:</strong></p>
+        <ul>
+            <li>Learn the data preparation and tokenization processes for training.</li>
+            <li>Understand how large-scale pretraining is performed.</li>
+        </ul>
+        <p><strong>Applications:</strong> Attempt pre-training on small-scale models (e.g., GPT-2).</p>
+        <p><strong>Purpose:</strong> Insight into how foundational models are trained.</p>
+    </div>
+
+    <!-- Step 9 -->
+    <div class="step">
+        <h2>Step 9: Alignment and Evaluation</h2>
+        <p><strong>Core Knowledge:</strong></p>
+        <ul>
+            <li>Mitigate bias and ensure ethical behavior in models.</li>
+            <li>Techniques: Reinforcement Learning with Human Feedback (RLHF) and testing for adversarial prompts.</li>
+        </ul>
+        <p><strong>Applications:</strong> Ensure AI safety and reliability in deployment.</p>
+        <p><strong>Learning Activities:</strong></p>
+        <ul>
+            <li>Conduct adversarial testing scenarios.</li>
+            <li>Explore case studies of bias in AI systems.</li>
+        </ul>
+    </div>
+
+    <!-- Step 10 -->
+    <div class="step">
+        <h2>Step 10: Advanced RAG and Future Insights</h2>
+        <p><strong>Core Knowledge:</strong></p>
+        <ul>
+            <li>Learn optimization techniques for RAG to handle complex datasets.</li>
+            <li>Understand how advanced RAG overcomes basic limitations.</li>
+        </ul>
+        <p><strong>Applications:</strong> Implement sophisticated document Q&A systems and dynamic applications.</p>
+        <p><strong>Purpose:</strong> Achieve a higher level of efficiency in RAG applications.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Generative AI Roadmap. All Rights Reserved.</p>
+    <a href="#" class="cta-button">Start Learning</a>
+</footer>
+
+</body>
+</html>
