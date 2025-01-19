@@ -6,7 +6,7 @@
     <title>Generative AI Roadmap</title>
     <style>
                 /* General Reset */
-                * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -28,11 +28,11 @@
         }
 
         header h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
             text-transform: uppercase;
             color: #60a5fa;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
 
@@ -40,17 +40,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 3rem;
-            gap: 3rem;
+            margin: 2rem 1rem;
+            gap: 2rem;
         }
 
         .step {
             background: linear-gradient(135deg, #1e3a8a, #2563eb);
             border-radius: 15px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-            width: 90%;
-            max-width: 850px;
-            padding: 2.5rem;
+            width: 100%;
+            max-width: 700px;
+            padding: 2rem;
             transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
         }
 
@@ -60,26 +60,26 @@
         }
 
         .step h2 {
-            font-size: 2.7rem;
+            font-size: 2rem;
             color: #dbeafe;
             text-align: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             font-weight: bold;
         }
 
         .step p, .step ul {
-            font-size: 1.3rem;
-            line-height: 2;
-            margin: 1rem 0;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin: 0.8rem 0;
             color: #f3f4f6;
         }
 
         .step ul {
-            padding-left: 2rem;
+            padding-left: 1.5rem;
         }
 
         .step ul li {
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             position: relative;
             color: #e5e7eb;
         }
@@ -95,21 +95,21 @@
 
         footer {
             text-align: center;
-            padding: 2rem;
+            padding: 1.5rem;
             background: #1f2937;
             color: #9ca3af;
-            margin-top: 4rem;
-            font-size: 1.2rem;
+            margin-top: 3rem;
+            font-size: 1rem;
             border-top: 3px solid #2563eb;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 1.2rem 2.5rem;
+            padding: 1rem 2rem;
             margin-top: 1rem;
             background: #2563eb;
             color: #fff;
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             font-weight: bold;
             text-transform: uppercase;
             text-decoration: none;
@@ -120,43 +120,76 @@
 
         .cta-button:hover {
             background: #1e40af;
-            transform: scale(1.1);
+            transform: scale(1.05);
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
         }
 
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5rem;
-            }
-
-            .step h2 {
                 font-size: 2.2rem;
             }
 
+            .step h2 {
+                font-size: 1.8rem;
+            }
+
             .step p, .step ul {
-                font-size: 1.1rem;
+                font-size: 0.9rem;
             }
 
             .roadmap-container {
-                gap: 2rem;
+                gap: 1.5rem;
             }
 
             .step {
-                padding: 2rem;
-                width: 95%;
+                padding: 1.5rem;
             }
 
             .cta-button {
-                font-size: 1.3rem;
-                padding: 1rem 2rem;
+                font-size: 1rem;
+                padding: 0.8rem 1.5rem;
             }
 
             footer {
-                font-size: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+                padding: 1.5rem;
+            }
+
+            .step h2 {
+                font-size: 1.6rem;
+            }
+
+            .step p, .step ul {
+                font-size: 0.8rem;
+            }
+
+            .roadmap-container {
+                gap: 1rem;
+            }
+
+            .step {
+                padding: 1.2rem;
+            }
+
+            .cta-button {
+                font-size: 0.9rem;
+                padding: 0.7rem 1.2rem;
+            }
+
+            footer {
+                font-size: 0.8rem;
+                padding: 1rem;
             }
         }
 
     </style>
+    
 </head>
 <body>
 
